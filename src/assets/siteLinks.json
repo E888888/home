@@ -13,5 +13,15 @@
     "icon": "LaptopCode",
     "name": "站点监测",
     "link": "https://dash.maodeyu.fun/"
+  },
+  {
+    "icon": "Fire",
+    "name": "FreeAI",
+    "link": "https://chat.maodeyu.fun/"
+  },
+  {
+    "icon": "Compass",
+    "name": "导航站",
+    "link": "https://nav.maodeyu.fun/"
   }
 ]

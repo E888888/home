@@ -34,43 +34,13 @@ const emit = defineEmits(["loadComplete"]);
 
 // 壁纸随机数
 // 请依据文件夹内的图片个数修改 Math.random() 后面的第一个数字
-const bgRandom = Math.floor(Math.random() * 10 + 1);
+const bgRandom = Math.floor(Math.random() * 9 + 1);
 
 // 更换壁纸链接
-const changeBg = async(type) => {
-  try {
-    const response = await fetch("https://api.maodeyu.fun/image/walls",{
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({ count: 1 }),
-    });
-    if (!response.ok) throw new Error("API 请求失败");
-    const data = await response.json();
-    if (
-      data &&
-      data.data &&
-      Array.isArray(data.data) 
-    ) {
-      bgUrl.value = data.data[0]
-      return;
-    }
-    throw new Error("无效的API响应结构");
-  } catch (error) {
-    console.error("从API获取壁纸地址失败:", error);
-    // 接口获取失败，使用原有逻辑
-    if (type === 0) {
-      bgUrl.value = `/images/background${bgRandom}.jpg`;
-    } else if (type === 1) {
-      bgUrl.value = "https://api.dujin.org/bing/1920.php";
-    } else if (type === 2) {
-      bgUrl.value = "https://api.vvhan.com/api/wallpaper/views";
-    } else if (type === 3) {
-      bgUrl.value = "https://api.vvhan.com/api/wallpaper/acg";
-    }
+const changeBg = async() => {
+  console.log("加载壁纸index",bgRandom);
+  bgUrl.value = `/images/background${bgRandom}.jpg`;
     
-  }
 };
 
 // 图片加载完成
@@ -106,14 +76,14 @@ const imgLoadError = () => {
 // 监听壁纸切换
 watch(
   () => store.coverType,
-  (value) => {
-    changeBg(value);
+  () => {
+    changeBg();
   },
 );
 
 onMounted(() => {
   // 加载壁纸
-  changeBg(store.coverType);
+  changeBg();
 });
 
 onBeforeUnmount(() => {
