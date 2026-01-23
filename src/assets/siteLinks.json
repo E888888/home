@@ -1,27 +1,17 @@
 [
   {
     "icon": "Compass",
-    "name": "East导航",
+    "name": "导航",
     "link": "https://nav-128.pages.dev/"
   },
   {
-    "icon": "App",
-    "name": "East软仓",
-    "link": "https://e888888.github.io/APP/"
+    "icon": "Blog",
+    "name": "博客",
+    "link": "https://o88888.github.io/"
   },
   {
     "icon": "LaptopCode",
-    "name": "站点监测",
-    "link": "https://dash.maodeyu.fun/"
-  },
-  {
-    "icon": "Fire",
-    "name": "FreeAI",
-    "link": "https://chat.maodeyu.fun/"
-  },
-  {
-    "icon": "Compass",
-    "name": "导航站",
-    "link": "https://nav.maodeyu.fun/"
+    "name": "软仓",
+    "link": "https://e888888.github.io/APP/"
   }
 ]
