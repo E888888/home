@@ -1,13 +1,13 @@
 [
   {
-    "icon": "Blog",
-    "name": "博客",
-    "link": "https://o88888.github.io/"
-  },
-  {
     "icon": "Compass",
     "name": "导航",
     "link": "https://nav-128.pages.dev/"
+  },
+  {
+    "icon": "Blog",
+    "name": "博客",
+    "link": "https://o88888.github.io/"
   },
   {
     "icon": "LaptopCode",
