@@ -1,4 +1,3 @@
-简体中文 | [English](./README_EN.md)
 
 ### 👀 效果预览
 
@@ -158,3 +157,4 @@ if (type == 0) {
 - [教书先生 API](https://api.oioweb.cn/doc/weather/GetWeather)
 - [高德开放平台](https://lbs.amap.com/)
 - [Hitokoto 一言](https://hitokoto.cn/)
+
