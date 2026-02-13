@@ -152,8 +152,8 @@ if (type == 0) {
 
 ### API
 
-- [高德开放平台](https://lbs.amap.com/)
 - [Hitokoto 一言](https://hitokoto.cn/)
+
 
 
 
